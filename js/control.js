@@ -112,7 +112,8 @@ control = {
         for (var side = 0; side < control.sides; side++) {
             for (var segment = 0; segment < control.segments; segment++) {
                 r = Math.floor((Math.sin(ms + segment) / 2 + 0.5) * 255);
-                g = Math.floor((Math.sin(ms + 222 + segment) / 2 + 0.5) * 255);
+                g = Math.floor((Math.sin(ms + 1 + segment) / 2 + 0.5) * 255);
+                b = Math.floor((Math.sin(ms + 222 + segment) / 2 + 0.5) * 255);
                 thisFace = (segment * control.sides) + side;
                 control.scene.children[0].geometry.faces[thisFace].color = new THREE.Color('rgb(' + r + ',' + g + ',' + b + ')');
             }
