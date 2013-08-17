@@ -5,7 +5,7 @@ CAT828 3D tunnel
 
 Just a bit of WebGL messing around. Not quite sure what to do with it now, possibly react to music :)
 
-+ Running here: http://revdancatt.github.com/CAT828-3d-tunnel/
++ Running here: http://revdancatt.github.io/CAT828-3d-tunnel/
 
 TODO
 ====
