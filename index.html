@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    <title>CAT828 3d tunnel</title>
+    <link rel="stylesheet" href="css/main.css?v=0.1">
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="threeHolder">
+    </div>
+
+    <div class="instructions">
+        WebGL only<br />
+        Source: <a href="https://github.com/revdancatt/CAT828-3d-tunnel">Github</a><br />
+        By: <a href="https://twitter.com/revdancatt">@revdancatt</a>
+    </div>
+
+    
+    <script src="js/jquery-2.0.0.min.js"></script> 
+    <script src="js/three.min.js"></script>
+    <script src="js/control.js?v=0.0.1"></script>
+    <script>
+        $(document).ready(function() {
+            control.init();
+            control.animate();
+        })
+    </script>    
+
+</body>
+</html>
