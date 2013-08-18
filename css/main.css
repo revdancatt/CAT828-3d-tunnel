@@ -5,6 +5,12 @@ body {
     background: #1b1b1b;
     width: 100%;
     height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
@@ -24,6 +30,7 @@ html {
 
 .ui-cover {
     background: none;
+    cursor: crosshair;
 }
 
 .instructions {
@@ -38,7 +45,8 @@ html {
     padding: 8px;
 }
 
-#dialog {
+#dialog,
+.debug {
     position: fixed;
     width: 260px;
     top: 8px;
