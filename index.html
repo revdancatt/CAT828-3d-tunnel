@@ -13,7 +13,10 @@
 </head>
 <body>
 
-    <div class="threeHolder">
+    <div class="threeHolder stage">
+    </div>
+
+    <div class="ui-cover stage">
     </div>
 
     <div class="instructions">
@@ -22,10 +25,16 @@
         By: <a href="https://twitter.com/revdancatt">@revdancatt</a>
     </div>
 
+    <div id="dialog" title="Scene ready" class="hidden">
+        <p>
+            Ready! Click <a href="scene.html" target="_blank" class="showScene">here</a> to open scene file in new tab.
+        </p>
+    </div>
     
     <script src="js/jquery-2.0.0.min.js"></script> 
     <script src="js/three.min.js"></script>
     <script src="js/control.js?v=0.0.2"></script>
+    <script src="js/sunflow.js?v=0.0.2"></script>
     <script>
         $(document).ready(function() {
             control.init();

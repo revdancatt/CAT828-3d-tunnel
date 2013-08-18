@@ -12,15 +12,18 @@ html {
     height: 100%;
 }
 
-.threeHolder {
-    position: relative;
+.threeHolder,
+.ui-cover {
+    position: absolute;
     width: 16px;
     height: 9px;
     background: #000000;
     margin: 0;
     padding: 0;
-    margin-left: auto;
-    margin: auto;
+}
+
+.ui-cover {
+    background: none;
 }
 
 .instructions {
@@ -35,7 +38,27 @@ html {
     padding: 8px;
 }
 
-.instructions a {
+#dialog {
+    position: fixed;
+    width: 260px;
+    top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(64, 64, 64, 0.4);
+    border: rgba(64, 64, 64, 0.8);
+    color: #ddd;
+    font-size: 12px;
+    font-family: monospace;
+    padding: 8px;
+}
+
+.instructions a,
+#dialog a {
     text-decoration: none;
     color: rgb(0, 255, 192);
+}
+
+#hiddenStuff,
+.hidden {
+    display: none;
 }
